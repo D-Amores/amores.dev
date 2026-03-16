@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/carousel'
 import { portfolioData } from '@/data/portfolio'
 import type { Skill } from '@/types'
+import FadeIn from '@/components/ui/FadeIn'
 
 const iconMap: Record<string, React.ReactNode> = {
   'JavaScript':          <SiJavascript className="text-yellow-400" />,
@@ -81,21 +82,25 @@ const Skills = () => {
       <div className="mx-auto max-w-5xl flex flex-col gap-12">
 
         {/* Título */}
-        <div>
-          <span className="text-sm font-medium text-violet-400">Lo que sé hacer</span>
-          <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
-            Skills
-          </h2>
-        </div>
+        <FadeIn>
+          <div>
+            <span className="text-sm font-medium text-violet-400">Lo que sé hacer</span>
+            <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
+              Skills
+            </h2>
+          </div>
+        </FadeIn>
 
         {/* Categorías con carousel */}
-        {categories.map(({ key, label }) => {
-          const filtered = skills.filter((s) => s.category === key)
-          if (filtered.length === 0) return null
-          return (
-            <SkillsCarousel key={key} skills={filtered} label={label} />
-          )
-        })}
+        <FadeIn delay={0.2}>
+          {categories.map(({ key, label }) => {
+            const filtered = skills.filter((s) => s.category === key)
+            if (filtered.length === 0) return null
+            return (
+              <SkillsCarousel key={key} skills={filtered} label={label} />
+            )
+          })}
+        </FadeIn>
 
       </div>
     </section>

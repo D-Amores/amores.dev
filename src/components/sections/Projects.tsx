@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/carousel'
 import { portfolioData } from '@/data/portfolio'
 import type { Project } from '@/types'
+import FadeIn from '../ui/FadeIn'
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const navigate = useNavigate()
@@ -100,28 +101,32 @@ const Projects = () => {
       <div className="mx-auto max-w-5xl flex flex-col gap-12">
 
         {/* Título */}
-        <div>
-          <span className="text-sm font-medium text-violet-400">Lo que he construido</span>
-          <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
-            Proyectos
-          </h2>
-        </div>
+        <FadeIn>
+          <div>
+            <span className="text-sm font-medium text-violet-400">Lo que he construido</span>
+            <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
+              Proyectos
+            </h2>
+          </div>
+        </FadeIn>
 
         {/* Carousel */}
-        <Carousel
-          opts={{ align: 'start', loop: true }}
-          className="w-full"
-        >
-          <CarouselContent className="-ml-4">
-            {projects.map((project) => (
-              <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <ProjectCard project={project} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-100 -left-4" />
-          <CarouselNext className="border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-100 -right-4" />
-        </Carousel>
+        <FadeIn delay={0.2}>
+          <Carousel
+            opts={{ align: 'start', loop: true }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {projects.map((project) => (
+                <CarouselItem key={project.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <ProjectCard project={project} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-100 -left-4" />
+            <CarouselNext className="border-zinc-700 bg-zinc-900 text-zinc-300 hover:bg-zinc-800 hover:text-zinc-100 -right-4" />
+          </Carousel>
+        </FadeIn>
 
       </div>
     </section>
