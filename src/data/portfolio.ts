@@ -2,7 +2,7 @@ import type { PortfolioData } from '../types'
 
 export const portfolioData: PortfolioData = {
   profile: {
-    name: 'Tu Nombre',
+    name: 'Daniel Amores',
     role: 'Full Stack Developer',
     bio: 'Apasionado por construir experiencias digitales elegantes y funcionales. Me especializo en React, Node.js y todo lo que huela a JavaScript.',
     location: 'Monterrey, México',
@@ -24,15 +24,41 @@ export const portfolioData: PortfolioData = {
     ],
   },
   skills: [
-    { name: 'React', category: 'frontend', level: 'advanced' },
+    // Frontend
+    { name: 'JavaScript', category: 'frontend', level: 'advanced' },
     { name: 'TypeScript', category: 'frontend', level: 'advanced' },
+    { name: 'Bootstrap 5', category: 'frontend', level: 'advanced' },
     { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
-    { name: 'Node.js', category: 'backend', level: 'intermediate' },
-    { name: 'Express', category: 'backend', level: 'intermediate' },
-    { name: 'PostgreSQL', category: 'backend', level: 'intermediate' },
-    { name: 'Git', category: 'tools', level: 'advanced' },
-    { name: 'Docker', category: 'tools', level: 'beginner' },
-    { name: 'Figma', category: 'tools', level: 'intermediate' },
+    { name: 'React', category: 'frontend', level: 'advanced' },
+
+    // Backend
+    { name: 'PHP', category: 'backend', level: 'advanced' },
+    { name: 'Python', category: 'backend', level: 'intermediate' },
+    { name: 'FastAPI', category: 'backend', level: 'intermediate' },
+    { name: 'Laravel', category: 'backend', level: 'advanced' },
+    { name: 'SQL', category: 'backend', level: 'advanced' },
+    { name: 'MySQL', category: 'backend', level: 'advanced' },
+    { name: 'PostgreSQL', category: 'backend', level: 'advanced' },
+
+    // Tools
+    { name: 'Git / GitHub', category: 'tools', level: 'advanced' },
+    { name: 'Docker', category: 'tools', level: 'intermediate' },
+    { name: 'Linux', category: 'tools', level: 'intermediate' },
+    { name: 'Servidores', category: 'tools', level: 'intermediate' },
+    { name: 'Postman', category: 'tools', level: 'advanced' },
+    { name: 'Markdown', category: 'tools', level: 'advanced' },
+    { name: 'Office', category: 'tools', level: 'advanced' },
+
+    // Other
+    { name: 'Ciberseguridad', category: 'other', level: 'intermediate' },
+    { name: 'Redes', category: 'other', level: 'intermediate' },
+    { name: 'Sistemas Operativos', category: 'other', level: 'intermediate' },
+    { name: 'LangChain', category: 'ai', level: 'intermediate' },
+    { name: 'LangGraph', category: 'ai', level: 'intermediate' },
+    { name: 'n8n', category: 'ai', level: 'intermediate' },
+    { name: 'MCP', category: 'ai', level: 'intermediate' },
+    { name: 'RAG', category: 'ai', level: 'intermediate' },
+    { name: 'Inglés B1', category: 'other', level: 'intermediate' },
   ],
   projects: [
     {

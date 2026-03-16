@@ -5,7 +5,7 @@ export interface SocialLink {
 
 export interface Skill {
   name: string
-  category: 'frontend' | 'backend' | 'tools' | 'other'
+  category: 'frontend' | 'backend' | 'tools' | 'other' | 'ai'
   level?: 'beginner' | 'intermediate' | 'advanced'
 }
 
