@@ -1,13 +1,15 @@
-import { ArrowRight, ArrowDown, Github, Linkedin, Instagram } from 'lucide-react'
+import { ArrowRight, ArrowDown } from 'lucide-react'
+import { SiGithub, SiInstagram } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { portfolioData } from '@/data/portfolio'
 import { TypeAnimation } from 'react-type-animation'
 
 const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
-  instagram: Instagram,
+  github:    SiGithub,
+  linkedin:  FaLinkedin,
+  instagram: SiInstagram,
 }
 
 const Hero = () => {

@@ -1,10 +1,11 @@
-import { Github, Linkedin, Instagram } from 'lucide-react'
+import { SiGithub, SiInstagram } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa'
 import { portfolioData } from '@/data/portfolio'
 
 const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
-  instagram: Instagram,
+  github:    SiGithub,
+  linkedin:  FaLinkedin,
+  instagram: SiInstagram,
 }
 
 const Footer = () => {
