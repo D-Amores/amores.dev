@@ -10,6 +10,7 @@ import {
 import { portfolioData } from '@/data/portfolio'
 import type { Skill } from '@/types'
 import FadeIn from '@/components/ui/FadeIn'
+import { useTranslation } from 'react-i18next'
 
 const iconMap: Record<string, React.ReactNode> = {
   'JavaScript':          <SiJavascript className="text-yellow-400" />,
@@ -42,14 +43,6 @@ const iconMap: Record<string, React.ReactNode> = {
   'Inglés B1':           <FaLanguage className="text-zinc-300" />,
 }
 
-const categories = [
-  { key: 'frontend', label: 'Frontend' },
-  { key: 'backend',  label: 'Backend' },
-  { key: 'tools',    label: 'Herramientas' },
-  { key: 'ai',       label: 'IA & Automatización' },
-  { key: 'other',    label: 'Otros' },
-]
-
 const SkillCard = ({ skill }: { skill: Skill }) => (
   <div className="flex flex-col items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition-colors hover:border-violet-700/50 hover:bg-zinc-800/50 cursor-default h-full">
     <span className="text-3xl">{iconMap[skill.name] ?? <FaBrain className="text-violet-400" />}</span>
@@ -75,8 +68,17 @@ const SkillsCarousel = ({ skills, label }: { skills: Skill[], label: string }) =
 )
 
 const Skills = () => {
+  const { t } = useTranslation()
   const { skills } = portfolioData
 
+  const categories = [
+    { key: 'frontend', label: t('skills.categories.frontend') },
+    { key: 'backend',  label: t('skills.categories.backend') },
+    { key: 'tools',    label: t('skills.categories.tools') },
+    { key: 'ai',       label: t('skills.categories.ai') },
+    { key: 'other',    label: t('skills.categories.other') },
+  ]
+  
   return (
     <section id="skills" className="py-24 px-4 md:px-6 md:min-h-screen md:flex md:items-center">
       <div className="mx-auto max-w-5xl flex flex-col gap-12">
@@ -84,9 +86,9 @@ const Skills = () => {
         {/* Título */}
         <FadeIn>
           <div>
-            <span className="text-sm font-medium text-violet-400">Lo que sé hacer</span>
+            <span className="text-sm font-medium text-violet-400">{t('skills.tag')}</span>
             <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
-              Skills
+              {t('skills.title')}
             </h2>
           </div>
         </FadeIn>

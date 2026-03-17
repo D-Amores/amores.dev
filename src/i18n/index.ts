@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
         },
         skills: {
           tag: 'Lo que sé hacer',
-          title: 'Skills',
+          title: 'Habilidades',
           categories: {
             frontend: 'Frontend',
             backend: 'Backend',
