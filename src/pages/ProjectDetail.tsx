@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/carousel'
 import { portfolioData } from '@/data/portfolio'
 import { useTranslation } from 'react-i18next'
+import { tagIconMap } from '@/utils/tagIcons'
 
 const ProjectDetail = () => {
   const { id } = useParams()
@@ -71,8 +72,11 @@ const ProjectDetail = () => {
               <Badge
                 key={tag}
                 variant="outline"
-                className="border-zinc-700 text-zinc-400"
+                className="border-zinc-700 text-zinc-400 flex items-center gap-1"
               >
+                {tagIconMap[tag] && (
+                  <span className="text-xs">{tagIconMap[tag]}</span>
+                )}
                 {tag}
               </Badge>
             ))}

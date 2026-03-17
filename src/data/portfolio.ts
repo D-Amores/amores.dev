@@ -6,7 +6,7 @@ export const portfolioData: PortfolioData = {
     role: 'Full Stack Developer',
     bio: 'Apasionado por construir experiencias digitales elegantes y funcionales. Me especializo en React, Node.js y todo lo que huela a JavaScript.',
     location: 'Monterrey, México',
-    email: 'tu@email.com',
+    email: 'amores.dev@outlook.com',
     cvUrl: '/cv.pdf',
     socials: [
       {
@@ -66,7 +66,7 @@ export const portfolioData: PortfolioData = {
       title: 'E-Commerce App',
       description: 'Tienda online con carrito, pagos y panel de administración.',
       longDescription: 'Este proyecto es una tienda online completa construida con React y Node.js. Cuenta con autenticación de usuarios, carrito de compras, integración con Stripe para pagos, y un panel de administración para gestionar productos y pedidos.',
-      tags: ['MCP', 'Python', 'Streamlit', 'AI'],
+      tags: ['MCP', 'Python', 'Streamlit', 'AI', 'Gemini', 'DeepSeek', 'Ollama', '1 Developer'],
       githubUrl: 'https://github.com/tuusuario/ecommerce',
       image: '',
       images: ['MCP', 'Python', 'Streamlit', 'AI', '1 Developer'],

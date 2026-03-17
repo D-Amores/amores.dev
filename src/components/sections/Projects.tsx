@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { tagIconMap } from '@/utils/tagIcons'
 import {
   Carousel,
   CarouselContent,
@@ -59,8 +60,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
             <Badge
               key={tag}
               variant="outline"
-              className="border-zinc-700 text-zinc-400 text-xs"
+              className="border-zinc-700 text-zinc-400 text-xs flex items-center gap-1"
             >
+              {tagIconMap[tag] && (
+                <span className="text-xs">{tagIconMap[tag]}</span>
+              )}
               {tag}
             </Badge>
           ))}

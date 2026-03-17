@@ -1,0 +1,33 @@
+import { SiBootstrap, SiOpenai, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit } from 'react-icons/si'
+import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug } from 'react-icons/fa'
+
+export const tagIconMap: Record<string, React.ReactNode> = {
+  'Python':      <SiPython className="text-yellow-300" />,
+  'React':       <SiReact className="text-cyan-400" />,
+  'Laravel':     <SiLaravel className="text-red-400" />,
+  'Docker':      <SiDocker className="text-blue-400" />,
+  'PostgreSQL':  <SiPostgresql className="text-blue-400" />,
+  'MySQL':       <SiMysql className="text-blue-300" />,
+  'FastAPI':     <SiFastapi className="text-emerald-400" />,
+  'TypeScript':  <SiTypescript className="text-blue-400" />,
+  'JavaScript':  <SiJavascript className="text-yellow-400" />,
+  'Tailwind':    <SiTailwindcss className="text-cyan-400" />,
+  'PHP':         <SiPhp className="text-indigo-400" />,
+  'GitHub':      <SiGithub className="text-zinc-300" />,
+  'n8n':         <SiN8N className="text-pink-400" />,
+  'LangChain':   <SiLangchain className="text-emerald-400" />,
+  'AI':          <FaBrain className="text-violet-400" />,
+  'MCP':         <FaBrain className="text-violet-300" />,
+  'RAG':         <FaBrain className="text-indigo-400" />,
+  'LangGraph':   <FaBrain className="text-violet-400" />,
+  'Streamlit': <SiStreamlit className="text-red-400" />,
+  '1 Developer': <FaUser className="text-zinc-400" />,
+  '2 Developers': <FaUsers className="text-zinc-400" />,
+  '3 Developers': <FaUsers className="text-zinc-400" />,
+  'OpenAI':    <SiOpenai className="text-zinc-100" />,
+  'Gemini':    <SiGooglegemini className="text-blue-400" />,
+  'DeepSeek':  <FaRobot className="text-blue-300" />,
+  'Ollama':    <FaRobot className="text-violet-400" />,
+  'API REST':  <FaPlug className="text-orange-400" />,
+  'Bootstrap': <SiBootstrap className="text-purple-400" />,
+}
