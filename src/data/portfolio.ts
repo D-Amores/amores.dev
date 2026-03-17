@@ -4,8 +4,8 @@ export const portfolioData: PortfolioData = {
   profile: {
     name: 'Daniel Amores',
     role: 'Full Stack Developer',
-    bio: 'Apasionado por construir experiencias digitales elegantes y funcionales. Me especializo en React, Node.js y todo lo que huela a JavaScript.',
-    location: 'Monterrey, México',
+    bio: 'Bio corta',
+    location: 'Ramos Arizpe, Coahuila, México',
     email: 'amores.dev@outlook.com',
     cvUrl: '/cv.pdf',
     socials: [
@@ -76,14 +76,14 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
-      id: 'project-1',
+      id: 'email-mcp-agent',
       title: 'E-Commerce App',
       description: 'Tienda online con carrito, pagos y panel de administración.',
       longDescription: 'Este proyecto es una tienda online completa construida con React y Node.js. Cuenta con autenticación de usuarios, carrito de compras, integración con Stripe para pagos, y un panel de administración para gestionar productos y pedidos.',
-      tags: ['MCP', 'Python', 'Streamlit', 'AI', 'Gemini', 'DeepSeek', 'Ollama', '1 Developer'],
+      tags: ['MCP', 'Python', 'Streamlit', 'AI', 'Gemini', 'DeepSeek', 'Ollama', 'SOLID', 'Clean Code', 'Design Patterns', '1 Developer'],
       githubUrl: 'https://github.com/tuusuario/ecommerce',
-      image: '',
-      images: ['MCP', 'Python', 'Streamlit', 'AI', '1 Developer'],
+      image: '/projects/project-1/photo_1.png',
+      images: ["/projects/project-1/photo_1.png", "/projects/project-1/photo_2.png", "/projects/project-1/photo_3.png", "/projects/project-1/photo_4.png", "/projects/project-1/photo_5.png", "/projects/project-1/photo_6.png",],
       featured: true,
     },
     {

@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, X } from 'lucide-react'
 import { SiGithub } from 'react-icons/si'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -16,12 +16,14 @@ import {
 import { portfolioData } from '@/data/portfolio'
 import { useTranslation } from 'react-i18next'
 import { tagIconMap } from '@/utils/tagIcons'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+
 
 const ProjectDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { t } = useTranslation()
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
@@ -48,6 +50,27 @@ const ProjectDetail = () => {
 
   return (
     <>
+    {/* Lightbox */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm cursor-pointer"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-zinc-400 hover:text-zinc-100 cursor-pointer"
+            onClick={() => setSelectedImage(null)}
+          >
+            <X size={28} />
+          </button>
+          <img
+            src={selectedImage}
+            alt="preview"
+            className="max-h-[90vh] max-w-[90vw] rounded-xl object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+
       <ParticlesBackground />
       <Navbar minimal={true}/>
       <div className="min-h-screen px-4 py-24 md:px-6">
@@ -116,8 +139,9 @@ const ProjectDetail = () => {
                       {img ? (
                         <img
                           src={img}
-                          alt={`${project.title} - imagen ${i + 1}`}
-                          className="h-full w-full object-cover"
+                          alt={`${t(`projects.items.${project.id}.title`)} - imagen ${i + 1}`}
+                          className="h-full w-full object-cover cursor-pointer"
+                          onClick={() => setSelectedImage(img)}
                         />
                       ) : (
                         <div className="flex h-full items-center justify-center">

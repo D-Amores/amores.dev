@@ -51,7 +51,7 @@ i18n.use(initReactI18next).init({
           back: 'Volver',
           about: 'Sobre el proyecto',
           items: {
-            'project-1': {
+            'email-mcp-agent': {
               title: 'MCP Server: Intelligent Email Agent',
               description: 'Ecosistema basado en el Model Context Protocol para la gestión autónoma de correo electrónico mediante LLMs.',
               longDescription: 'Desarrollé una implementación completa del protocolo MCP que actúa como puente entre LLMs (Gemini, DeepSeek, Ollama) y servicios de comunicación. El sistema incluye un servidor con herramientas personalizadas para listar, leer y redactar correos, y un cliente dinámico construido en Streamlit. Implementé una arquitectura que permite al modelo decidir qué herramienta usar según la intención del usuario, integrando inferencia tanto local como en la nube para un procesamiento de datos eficiente y privado.',
@@ -133,7 +133,7 @@ i18n.use(initReactI18next).init({
           back: 'Back',
           about: 'About the project',
           items: {
-            'project-1': {
+            'email-mcp-agent': {
               title: 'MCP Server: Intelligent Email Agent',
               description: 'A Model Context Protocol implementation for autonomous email management using multi-LLM orchestration.',
               longDescription: 'I built a full-stack MCP ecosystem that enables LLMs to interact directly with email services. The project features a custom MCP Server with specialized tools and prompts, integrated with a Streamlit-based chatbot. I implemented a multi-model architecture supporting Gemini, DeepSeek, and local inference via Ollama. This project demonstrates my ability to build agentic workflows where the AI moves beyond chat to execute real-world actions like summarizing, filtering, and sending professional communications.',
