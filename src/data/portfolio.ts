@@ -91,10 +91,10 @@ export const portfolioData: PortfolioData = {
       title: 'Task Manager',
       description: 'App de gestión de tareas con drag & drop y colaboración en tiempo real.',
       longDescription: 'Descripción larga...',
-      tags: ['React', 'Socket.io', 'MongoDB'],
+      tags: ['Python', 'Streamlit', 'AI', 'LangChain', 'DeepSeek', 'SOLID', 'Clean Code', 'Design Patterns', '1 Developer'],
       githubUrl: 'https://github.com/tuusuario/tasks',
-      image: '',
-      images: ['', '', ''],
+      image: '/projects/project-2/photo_1.png',
+      images: ['/projects/project-2/photo_1.png', '/projects/project-2/photo_2.png', '/projects/project-2/photo_3.png', '/projects/project-2/photo_4.png', '/projects/project-2/photo_5.png', '/projects/project-2/photo_6.png', '/projects/project-2/photo_7.png', '/projects/project-2/photo_8.png'],
       featured: true,
     },
     {
