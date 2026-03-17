@@ -14,7 +14,7 @@ const Contact = () => {
   const { name, email, location, socials } = portfolioData.profile
 
   return (
-    <section id="contact" className="py-24 px-4 md:px-6">
+    <section id="contact" className="py-24 px-4 md:px-6 md:min-h-screen md:flex md:items-center">
       <div className="mx-auto max-w-5xl">
 
         {/* Título */}

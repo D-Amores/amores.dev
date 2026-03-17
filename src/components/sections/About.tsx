@@ -15,7 +15,7 @@ const About = () => {
     .slice(0, 2)
 
   return (
-    <section id="about" className="py-24 px-4 md:px-6">
+    <section id="about" className="py-24 px-4 md:px-6 md:min-h-screen md:flex md:items-center">
       <div className="mx-auto max-w-5xl">
 
         {/* Título de sección */}

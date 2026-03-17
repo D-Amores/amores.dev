@@ -97,7 +97,7 @@ const Projects = () => {
   const { projects } = portfolioData
 
   return (
-    <section id="projects" className="py-24 px-4 md:px-6">
+    <section id="projects" className="py-24 px-4 md:px-6 md:min-h-screen md:flex md:items-center">
       <div className="mx-auto max-w-5xl flex flex-col gap-12">
 
         {/* Título */}
