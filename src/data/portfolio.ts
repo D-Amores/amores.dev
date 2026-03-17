@@ -66,10 +66,10 @@ export const portfolioData: PortfolioData = {
       title: 'E-Commerce App',
       description: 'Tienda online con carrito, pagos y panel de administración.',
       longDescription: 'Este proyecto es una tienda online completa construida con React y Node.js. Cuenta con autenticación de usuarios, carrito de compras, integración con Stripe para pagos, y un panel de administración para gestionar productos y pedidos.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      tags: ['MCP', 'Python', 'Streamlit', 'AI'],
       githubUrl: 'https://github.com/tuusuario/ecommerce',
       image: '',
-      images: ['', '', ''],
+      images: ['MCP', 'Python', 'Streamlit', 'AI', '1 Developer'],
       featured: true,
     },
     {
@@ -105,5 +105,14 @@ export const portfolioData: PortfolioData = {
       images: ['', '', ''],
       featured: false,
     },
+    {
+    id: 'project-5',
+    title: 'Proyecto 5',
+    description: 'Descripción corta',
+    longDescription: 'Descripción larga',
+    tags: ['React', 'Node.js'],
+    githubUrl: 'https://github.com/tuusuario/proyecto5',
+    featured: false,
+  },
   ],
 }

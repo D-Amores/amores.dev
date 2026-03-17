@@ -3,6 +3,7 @@ import { SiGithub } from 'react-icons/si'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +16,7 @@ import type { Project } from '@/types'
 import FadeIn from '../ui/FadeIn'
 
 const ProjectCard = ({ project }: { project: Project }) => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
 
   return (
@@ -29,7 +31,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             className="h-full w-full object-cover"
           />
         ) : (
-          <span className="text-zinc-600 text-sm">Sin imagen</span>
+          <span className="text-zinc-600 text-sm">image</span>
         )}
       </div>
 
@@ -39,16 +41,16 @@ const ProjectCard = ({ project }: { project: Project }) => {
         {/* Featured badge */}
         {project.featured && (
           <Badge className="w-fit bg-violet-700/20 text-violet-400 border-violet-700/30 hover:bg-violet-700/20">
-            Destacado
+            {t('projects.featured')}
           </Badge>
         )}
 
         {/* Título */}
-        <h3 className="font-semibold text-zinc-100">{project.title}</h3>
+        <h3 className="font-semibold text-zinc-100">{t(`projects.items.${project.id}.title`) ?? project.title}</h3>
 
         {/* Descripción */}
         <p className="text-sm text-zinc-400 leading-relaxed flex-1">
-          {project.description}
+          {t(`projects.items.${project.id}.description`) ?? project.description}
         </p>
 
         {/* Tags */}
@@ -74,7 +76,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             >
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                 <SiGithub size={14} className="mr-1" />
-                GitHub
+                {t('projects.github')}
               </a>
             </Button>
           )}
@@ -84,7 +86,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             className="border-zinc-700 bg-transparent text-zinc-300 hover:bg-zinc-800 cursor-pointer"
             onClick={() => navigate(`/projects/${project.id}`)}
           >
-            Ver más
+            {t('projects.viewMore')}
             <ArrowRight size={14} className="ml-1" />
           </Button>
         </div>
@@ -95,6 +97,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 }
 
 const Projects = () => {
+  const { t } = useTranslation()
   const { projects } = portfolioData
 
   return (
@@ -104,9 +107,9 @@ const Projects = () => {
         {/* Título */}
         <FadeIn>
           <div>
-            <span className="text-sm font-medium text-violet-400">Lo que he construido</span>
+            <span className="text-sm font-medium text-violet-400">{t('projects.tag')}</span>
             <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
-              Proyectos
+              {t('projects.title')}
             </h2>
           </div>
         </FadeIn>

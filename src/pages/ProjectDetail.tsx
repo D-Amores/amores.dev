@@ -12,23 +12,25 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import { portfolioData } from '@/data/portfolio'
+import { useTranslation } from 'react-i18next'
 
 const ProjectDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   const project = portfolioData.projects.find((p) => p.id === id)
 
   if (!project) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center gap-4">
-        <p className="text-zinc-400">Proyecto no encontrado.</p>
+        <p className="text-zinc-400">Project not found.</p>
         <Button
           className="bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
           onClick={() => navigate('/')}
         >
           <ArrowLeft size={16} className="mr-2" />
-          Volver al inicio
+          {t('projects.back')}
         </Button>
       </div>
     )
@@ -46,21 +48,21 @@ const ProjectDetail = () => {
           className="flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer w-fit"
         >
           <ArrowLeft size={16} />
-          Volver
+          {t('projects.back')}
         </button>
 
         {/* Header */}
         <div className="flex flex-col gap-4">
           {project.featured && (
             <Badge className="w-fit bg-violet-700/20 text-violet-400 border-violet-700/30 hover:bg-violet-700/20">
-              Destacado
+              {t('projects.featured')}
             </Badge>
           )}
           <h1 className="text-4xl font-bold text-zinc-100 md:text-5xl">
-            {project.title}
+            {t(`projects.items.${project.id}.title`) ?? project.title}
           </h1>
           <p className="text-zinc-400 text-base leading-relaxed">
-            {project.description}
+            {t(`projects.items.${project.id}.description`) ?? project.description}
           </p>
 
           {/* Tags */}
@@ -84,7 +86,7 @@ const ProjectDetail = () => {
             >
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                 <SiGithub size={16} className="mr-2" />
-                Ver en GitHub
+                {t('projects.viewProject')}
               </a>
             </Button>
           )}
@@ -105,7 +107,7 @@ const ProjectDetail = () => {
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center">
-                        <span className="text-zinc-600 text-sm">Sin imagen</span>
+                        <span className="text-zinc-600 text-sm">image</span>
                       </div>
                     )}
                   </div>
@@ -120,9 +122,9 @@ const ProjectDetail = () => {
         {/* Descripción larga */}
         {project.longDescription && (
           <div className="flex flex-col gap-3">
-            <h2 className="text-xl font-semibold text-zinc-100">Sobre el proyecto</h2>
+            <h2 className="text-xl font-semibold text-zinc-100">{t('projects.about')}</h2>
             <p className="text-zinc-400 leading-relaxed">
-              {project.longDescription}
+              {t(`projects.items.${project.id}.longDescription`) ?? project.longDescription}
             </p>
           </div>
         )}

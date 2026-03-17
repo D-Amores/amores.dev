@@ -46,8 +46,36 @@ i18n.use(initReactI18next).init({
           featured: 'Destacado',
           viewMore: 'Ver más',
           github: 'GitHub',
+          viewProject: 'Ver en GitHub',
           back: 'Volver',
           about: 'Sobre el proyecto',
+          items: {
+            'project-1': {
+              title: 'MCP Server: Intelligent Email Agent',
+              description: 'Ecosistema basado en el Model Context Protocol para la gestión autónoma de correo electrónico mediante LLMs.',
+              longDescription: 'Desarrollé una implementación completa del protocolo MCP que actúa como puente entre LLMs (Gemini, DeepSeek, Ollama) y servicios de comunicación. El sistema incluye un servidor con herramientas personalizadas para listar, leer y redactar correos, y un cliente dinámico construido en Streamlit. Implementé una arquitectura que permite al modelo decidir qué herramienta usar según la intención del usuario, integrando inferencia tanto local como en la nube para un procesamiento de datos eficiente y privado.',
+            },
+            'project-2': {
+              title: 'AI Talent Matcher: CV Analyzer',
+              description: 'Herramienta de análisis automatizado de perfiles profesionales utilizando LangChain y procesamiento de lenguaje natural.',
+              longDescription: 'Desarrollé una aplicación para optimizar procesos de reclutamiento mediante la extracción inteligente de datos. Utilicé LangChain para orquestar el modelo DeepSeek, permitiendo analizar archivos PDF y extraer automáticamente información clave como educación, habilidades técnicas y áreas de especialización. El sistema compara el perfil del candidato contra una descripción de puesto específica, generando un resumen ejecutivo y un porcentaje de afinidad basado en la relevancia de las competencias detectadas.',
+            },
+            'project-3': {
+              title: 'SIAPE: Gestión de Agendas Institucionales',
+              description: 'Sistema integral desarrollado para la Secretaría Anticorrupción y Buen Gobierno para la gestión de audiencias y eventos.',
+              longDescription: 'Diseñamos y desplegamos una solución Full-Stack utilizando Laravel 8 y MySQL para digitalizar el control de agendas gubernamentales. Implementamos un sistema robusto de roles y permisos, seguridad avanzada y una interfaz dinámica con Bootstrap. Además, configuramos el entorno de producción en un servidor Debian 12 con Apache y automatizamos el envío de notificaciones y consultas en tiempo real mediante un Bot de Telegram integrado con tareas programadas (Cron).'
+            },
+            'project-4': {
+              title: 'Kanan: Control de Activos Institucionales',
+              description: 'Sistema integral para la gestión, control y trazabilidad de activos físicos y tecnológicos en entornos gubernamentales.',
+              longDescription: 'Desarrollamos una plataforma robusta en la secretaria anticorrupción y buen gobierno, utilizando Laravel 12 y Docker (Sail) para reemplazar procesos manuales en Excel por un sistema automatizado de control de activos (hardware y mobiliario). Implementamos una arquitectura segura con MySQL en servidores Debian 12, permitiendo la asignación y el traspaso de bienes con mecanismos de no repudio. El sistema garantiza la trazabilidad total de los activos mediante una gestión de roles y permisos estrictamente controlada.'
+            },
+            'project-5': {
+              title: 'AI Spam Detector: ML Classification',
+              description: 'Sistema de detección de correo no deseado basado en modelos de aprendizaje supervisado y procesamiento de lenguaje natural.',
+              longDescription: 'Desarrollé un detector de spam utilizando Python y Streamlit, entrenado con un dataset de 75,000 correos electrónicos etiquetados. Implementé un modelo de Regresión Logística para la clasificación de texto, integrando una funcionalidad que permite configurar dinámicamente el volumen de datos de entrenamiento desde la interfaz. El sistema permite cargar archivos de correo para realizar predicciones en tiempo real, demostrando capacidades en preprocesamiento de datos (NLP), entrenamiento de modelos y evaluación de precisión.'
+            }
+          }
         },
         contact: {
           tag: '¿Hablamos?',
@@ -99,8 +127,36 @@ i18n.use(initReactI18next).init({
           featured: 'Featured',
           viewMore: 'View more',
           github: 'GitHub',
+          viewProject: 'View in GitHub',
           back: 'Back',
           about: 'About the project',
+          items: {
+            'project-1': {
+              title: 'MCP Server: Intelligent Email Agent',
+              description: 'A Model Context Protocol implementation for autonomous email management using multi-LLM orchestration.',
+              longDescription: 'I built a full-stack MCP ecosystem that enables LLMs to interact directly with email services. The project features a custom MCP Server with specialized tools and prompts, integrated with a Streamlit-based chatbot. I implemented a multi-model architecture supporting Gemini, DeepSeek, and local inference via Ollama. This project demonstrates my ability to build agentic workflows where the AI moves beyond chat to execute real-world actions like summarizing, filtering, and sending professional communications.',
+            },
+            'project-2': {
+              title: 'AI Talent Matcher: CV Analyzer',
+              descriptionEn: 'AI-powered recruitment tool for resume screening and job matching using LangChain.',
+              longDescriptionEn: 'I developed a recruitment automation tool that leverages LangChain to orchestrate DeepSeek for information extraction from PDF resumes. The system identifies key data points such as education and professional skills, comparing them against specific job descriptions. It generates an executive summary and a compatibility score, showcasing my ability to handle unstructured data and transform it into actionable insights using NLP.'
+            },
+            'project-3': {
+              title: 'SIAPE: Institutional Agenda Management',
+              description: 'Institutional agenda management system developed for the Anti-Corruption and Good Governance Secretariat.',
+              longDescription: 'We designed and deployed a Full-Stack solution using Laravel 8 and MySQL to digitize government event tracking. We implemented a robust role-based access control (RBAC), advanced security measures, and a dynamic interface. We also managed the production environment on a Debian 12 server with Apache and automated daily notifications and real-time event queries through a Telegram Bot integrated with Cron jobs.'
+            },
+            'project-4': {
+              title: 'Kanan: Institutional Asset Management',
+              description: 'A comprehensive system for managing, controlling, and tracking physical and technological assets in government environments.',
+              longDescription: 'We developed a robust platform in the anti-corruption and good governance secretariat using Laravel 12 and Docker (Sail) to replace legacy Excel-based processes with an automated asset tracking system. We implemented a secure architecture with MySQL on Debian 12 servers, enabling asset assignments and transfers with non-repudiation mechanisms. The system ensures full traceability of government property through strictly controlled role-based access and advanced security measures.'
+            },
+            'project-5': {
+              title: 'AI Spam Detector: ML Classification',
+              description: 'Spam detection system based on supervised learning models and natural language processing.',
+              longDescription: 'I developed a spam detector using Python and Streamlit, trained on a dataset of 75,000 labeled emails. I implemented a Logistic Regression model for text classification, including a feature to dynamically configure the training data volume through the UI. The system enables real-time email uploads for accurate predictions, showcasing skills in data preprocessing (NLP), model training, and performance evaluation.'
+            }
+          }
         },
         contact: {
           tag: "Let's talk?",
