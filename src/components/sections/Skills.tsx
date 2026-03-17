@@ -1,4 +1,4 @@
-import { SiRedhat, SiFedora,SiPodman, SiOpenai, SiGooglegemini, SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact } from 'react-icons/si'
+import { SiNextdotjs, SiNodedotjs,SiRedhat, SiFedora,SiPodman, SiOpenai, SiGooglegemini, SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact, SiHtml5, SiCss } from 'react-icons/si'
 import { FaServer, FaNetworkWired, FaShieldAlt, FaDatabase, FaWindows, FaBrain, FaLanguage, FaRobot, FaCubes, FaCode, FaPlug, FaAws } from 'react-icons/fa'
 import { MdArchitecture } from 'react-icons/md'
 import {
@@ -54,6 +54,11 @@ const iconMap: Record<string, React.ReactNode> = {
   'Podman':              <SiPodman className="text-blue-400" />,
   'RedHat':              <SiRedhat className="text-blue-400" />,
   'Fedora':              <SiFedora className="text-blue-400" />,
+  'HTML':                <SiHtml5 className="text-orange-400" />,
+  'CSS':                 <SiCss className="text-blue-400" />,
+  'Shadcn':              <FaCode className="text-zinc-300" />,
+  'Next.js':        <SiNextdotjs className="text-zinc-300" />,
+  'Node.js':        <SiNodedotjs className="text-zinc-300" />,
 }
 
 const SkillCard = ({ skill }: { skill: Skill }) => (

@@ -1,5 +1,5 @@
-import {SiMarkdown, SiPostman, SiLinux, SiBootstrap, SiOpenai, SiPodman, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit } from 'react-icons/si'
-import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug, FaCubes, FaCode, FaAws } from 'react-icons/fa'
+import { SiRedhat, SiFedora, SiNextdotjs, SiNodedotjs, SiMarkdown, SiPostman, SiLinux, SiBootstrap, SiOpenai, SiPodman, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit, SiHtml5, SiCss } from 'react-icons/si'
+import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug, FaCubes, FaCode, FaAws, FaServer } from 'react-icons/fa'
 import { MdArchitecture } from 'react-icons/md'
 
 export const tagIconMap: Record<string, React.ReactNode> = {
@@ -30,8 +30,8 @@ export const tagIconMap: Record<string, React.ReactNode> = {
   'DeepSeek':  <FaRobot className="text-blue-300" />,
   'Ollama':    <FaRobot className="text-violet-400" />,
   'API REST':  <FaPlug className="text-orange-400" />,
+  'Servers':   <FaServer className="text-orange-400" />,
   'Bootstrap': <SiBootstrap className="text-purple-400" />,
-  // 'AWS':            <SiAmazonwebservices className="text-orange-400" />,
   'SOLID':          <FaCubes className="text-violet-400" />,
   'Clean Code':     <FaCode className="text-emerald-400" />,
   'Design Patterns': <MdArchitecture className="text-blue-400" />,
@@ -39,4 +39,13 @@ export const tagIconMap: Record<string, React.ReactNode> = {
   'Postman':        <SiPostman className="text-orange-400" />,
   'Podman':         <SiPodman className="text-blue-400" />,
   'AWS':            <FaAws className="text-orange-400" />,
+  'HTML':           <SiHtml5 className="text-orange-400" />,
+  'CSS':            <SiCss className="text-blue-400" />,
+  'Shadcn':         <FaCode className="text-zinc-300" />,
+  'Next.js':        <SiNextdotjs className="text-zinc-300" />,
+  'Node.js':        <SiNodedotjs className="text-zinc-300" />,
+  'Fedora':         <SiFedora className="text-zinc-300" />,
+  'RedHat':         <SiRedhat className="text-zinc-300" />,
+  'Markdown':       <SiMarkdown className="text-zinc-300" />,
+  'Office':         <FaCode className="text-zinc-300" />,
 }
