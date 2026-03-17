@@ -61,15 +61,15 @@ i18n.use(initReactI18next).init({
               description: 'Herramienta de análisis automatizado de perfiles profesionales utilizando LangChain y procesamiento de lenguaje natural.',
               longDescription: 'Desarrollé una aplicación para optimizar procesos de reclutamiento mediante la extracción inteligente de datos. Utilicé LangChain para orquestar el modelo DeepSeek, permitiendo analizar archivos PDF y extraer automáticamente información clave como educación, habilidades técnicas y áreas de especialización. El sistema compara el perfil del candidato contra una descripción de puesto específica, generando un resumen ejecutivo y un porcentaje de afinidad basado en la relevancia de las competencias detectadas.',
             },
-            'project-3': {
-              title: 'SIAPE: Gestión de Agendas Institucionales',
-              description: 'Sistema integral desarrollado para la Secretaría Anticorrupción y Buen Gobierno para la gestión de audiencias y eventos.',
-              longDescription: 'Diseñamos y desplegamos una solución Full-Stack utilizando Laravel 8 y MySQL para digitalizar el control de agendas gubernamentales. Implementamos un sistema robusto de roles y permisos, seguridad avanzada y una interfaz dinámica con Bootstrap. Además, configuramos el entorno de producción en un servidor Debian 12 con Apache y automatizamos el envío de notificaciones y consultas en tiempo real mediante un Bot de Telegram integrado con tareas programadas (Cron).'
-            },
-            'project-4': {
+            'kanan': {
               title: 'Kanan: Control de Activos Institucionales',
               description: 'Sistema integral para la gestión, control y trazabilidad de activos físicos y tecnológicos en entornos gubernamentales.',
               longDescription: 'Desarrollamos una plataforma robusta en la secretaria anticorrupción y buen gobierno, utilizando Laravel 12 y Docker (Sail) para reemplazar procesos manuales en Excel por un sistema automatizado de control de activos (hardware y mobiliario). Implementamos una arquitectura segura con MySQL en servidores Debian 12, permitiendo la asignación y el traspaso de bienes con mecanismos de no repudio. El sistema garantiza la trazabilidad total de los activos mediante una gestión de roles y permisos estrictamente controlada.'
+            },
+            'agenda': {
+              title: 'Gestión de Agendas Institucionales',
+              description: 'Sistema integral desarrollado para la Secretaría Anticorrupción y Buen Gobierno para la gestión de audiencias y eventos.',
+              longDescription: 'Diseñamos y desplegamos una solución Full-Stack utilizando Laravel 8 y MySQL para digitalizar el control de agendas gubernamentales. Implementamos un sistema robusto de roles y permisos, seguridad avanzada y una interfaz dinámica con Bootstrap. Además, configuramos el entorno de producción en un servidor Debian 12 con Apache y automatizamos el envío de notificaciones y consultas en tiempo real mediante un Bot de Telegram integrado con tareas programadas (Cron).'
             },
             'project-5': {
               title: 'AI Spam Detector: ML Classification',
@@ -143,15 +143,15 @@ i18n.use(initReactI18next).init({
               descriptionEn: 'AI-powered recruitment tool for resume screening and job matching using LangChain.',
               longDescriptionEn: 'I developed a recruitment automation tool that leverages LangChain to orchestrate DeepSeek for information extraction from PDF resumes. The system identifies key data points such as education and professional skills, comparing them against specific job descriptions. It generates an executive summary and a compatibility score, showcasing my ability to handle unstructured data and transform it into actionable insights using NLP.'
             },
-            'project-3': {
-              title: 'SIAPE: Institutional Agenda Management',
-              description: 'Institutional agenda management system developed for the Anti-Corruption and Good Governance Secretariat.',
-              longDescription: 'We designed and deployed a Full-Stack solution using Laravel 8 and MySQL to digitize government event tracking. We implemented a robust role-based access control (RBAC), advanced security measures, and a dynamic interface. We also managed the production environment on a Debian 12 server with Apache and automated daily notifications and real-time event queries through a Telegram Bot integrated with Cron jobs.'
-            },
-            'project-4': {
+            'kanan': {
               title: 'Kanan: Institutional Asset Management',
               description: 'A comprehensive system for managing, controlling, and tracking physical and technological assets in government environments.',
               longDescription: 'We developed a robust platform in the anti-corruption and good governance secretariat using Laravel 12 and Docker (Sail) to replace legacy Excel-based processes with an automated asset tracking system. We implemented a secure architecture with MySQL on Debian 12 servers, enabling asset assignments and transfers with non-repudiation mechanisms. The system ensures full traceability of government property through strictly controlled role-based access and advanced security measures.'
+            },
+            'siape': {
+              title: 'Institutional Agenda Management',
+              description: 'Institutional agenda management system developed for the Anti-Corruption and Good Governance Secretariat.',
+              longDescription: 'We designed and deployed a Full-Stack solution using Laravel 8 and MySQL to digitize government event tracking. We implemented a robust role-based access control (RBAC), advanced security measures, and a dynamic interface. We also managed the production environment on a Debian 12 server with Apache and automated daily notifications and real-time event queries through a Telegram Bot integrated with Cron jobs.'
             },
             'project-5': {
               title: 'AI Spam Detector: ML Classification',
