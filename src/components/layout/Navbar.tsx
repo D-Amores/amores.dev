@@ -1,31 +1,23 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { portfolioData } from '@/data/portfolio'
+import { useTranslation } from 'react-i18next'
 
 const navLinks = [
-  { label: 'Sobre mí', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Proyectos', href: '#projects' },
-  { label: 'Contacto', href: '#contact' },
+  { label: 'nav.about', href: '#about' },
+  { label: 'nav.skills', href: '#skills' },
+  { label: 'nav.projects', href: '#projects' },
+  { label: 'nav.contact', href: '#contact' },
 ]
 
 const Navbar = () => {
-  const [visible, setVisible] = useState(true)
   const [open, setOpen] = useState(false)
+  const { t, i18n } = useTranslation()
 
-  useEffect(() => {
-    let lastY = window.scrollY
-
-    const handleScroll = () => {
-      const currentY = window.scrollY
-      setVisible(currentY < lastY || currentY < 50)
-      lastY = currentY
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const toggleLang = () => {
+    i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es')
+  }
 
   const handleNavClick = (href: string) => {
     setOpen(false)
@@ -35,25 +27,17 @@ const Navbar = () => {
   }
 
   return (
-    // <header
-    //   className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
-    //     visible ? 'translate-y-0' : '-translate-y-full'
-    //   }`}
-    // >
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* Barra principal */}
       <div className="border-b border-violet-900/30 bg-violet-950/20 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 md:px-6">
 
-          {/* Logo / Nombre */}
-          <span className="text-sm font-semibold text-zinc-100">
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-sm font-semibold text-zinc-100 hover:text-violet-400 transition-colors cursor-pointer"
-            >
-              {portfolioData.profile.name}
-            </button>
-          </span>
+          {/* Logo */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-sm font-semibold text-zinc-100 hover:text-violet-400 transition-colors cursor-pointer"
+          >
+            {portfolioData.profile.name}
+          </button>
 
           {/* Links desktop */}
           <nav className="hidden items-center gap-6 md:flex">
@@ -63,29 +47,51 @@ const Navbar = () => {
                 href={link.href}
                 className="text-sm text-zinc-400 transition-colors hover:text-zinc-100 cursor-pointer"
               >
-                {link.label}
+                {t(link.label)}
               </a>
             ))}
           </nav>
 
-          {/* CV Button desktop */}
-          <Button
-            asChild
-            size="sm"
-            className="hidden bg-violet-700 hover:bg-violet-800 text-white cursor-pointer md:flex"
-          >
-            <a href={portfolioData.profile.cvUrl} target="_blank" rel="noopener noreferrer">
-              Descargar CV
-            </a>
-          </Button>
+          {/* Derecha desktop */}
+          <div className="hidden md:flex items-center gap-3">
+            {/* Toggle idioma */}
+            <button
+              onClick={toggleLang}
+              className="text-xs font-medium text-zinc-400 hover:text-violet-400 transition-colors cursor-pointer border border-zinc-700 rounded-md px-2 py-1"
+            >
+              {i18n.language === 'es' ? 'EN' : 'ES'}
+            </button>
 
-          {/* Hamburguesa móvil */}
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden text-zinc-400 hover:text-zinc-100 cursor-pointer transition-colors p-1"
-          >
-            {open ? <X size={22} /> : <Menu size={22} />}
-          </button>
+            {/* CV Button */}
+            <Button
+              asChild
+              size="sm"
+              className="bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
+            >
+              <a href={portfolioData.profile.cvUrl} target="_blank" rel="noopener noreferrer">
+                {t('nav.cv')}
+              </a>
+            </Button>
+          </div>
+
+          {/* Móvil derecha */}
+          <div className="flex items-center gap-2 md:hidden">
+            {/* Toggle idioma móvil */}
+            <button
+              onClick={toggleLang}
+              className="text-xs font-medium text-zinc-400 hover:text-violet-400 transition-colors cursor-pointer border border-zinc-700 rounded-md px-2 py-1"
+            >
+              {i18n.language === 'es' ? 'EN' : 'ES'}
+            </button>
+
+            {/* Hamburguesa */}
+            <button
+              onClick={() => setOpen(!open)}
+              className="text-zinc-400 hover:text-zinc-100 cursor-pointer transition-colors p-1"
+            >
+              {open ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
 
         </div>
       </div>
@@ -100,7 +106,7 @@ const Navbar = () => {
                 onClick={() => handleNavClick(link.href)}
                 className="py-3 text-left text-sm text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer border-b border-zinc-800/50 last:border-0"
               >
-                {link.label}
+                {t(link.label)}
               </button>
             ))}
             <Button
@@ -108,13 +114,12 @@ const Navbar = () => {
               className="mt-3 bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
             >
               <a href={portfolioData.profile.cvUrl} target="_blank" rel="noopener noreferrer">
-                Descargar CV
+                {t('nav.cv')}
               </a>
             </Button>
           </nav>
         </div>
       )}
-
     </header>
   )
 }

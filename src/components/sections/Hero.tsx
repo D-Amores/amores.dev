@@ -6,6 +6,7 @@ import { Separator } from '@/components/ui/separator'
 import { portfolioData } from '@/data/portfolio'
 import { TypeAnimation } from 'react-type-animation'
 import FadeIn from '../ui/FadeIn'
+import { useTranslation } from 'react-i18next'
 
 const iconMap = {
   github:    SiGithub,
@@ -14,7 +15,8 @@ const iconMap = {
 }
 
 const Hero = () => {
-  const { name, role, bio, socials } = portfolioData.profile
+  const { name, socials } = portfolioData.profile
+  const { t } = useTranslation()
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-4 pt-20 md:px-6">
@@ -23,7 +25,7 @@ const Hero = () => {
         {/* Saludo */}
         <FadeIn delay={0}>
           <span className="text-sm font-medium text-violet-400">
-            Hola, mi nombre es
+            {t('hero.greeting')}
           </span>
         </FadeIn>
 
@@ -38,14 +40,10 @@ const Hero = () => {
         <FadeIn delay={0.2}>
           <TypeAnimation
               sequence={[
-                  'Full Stack Developer',
-                  2000,
-                  'Frontend Developer',
-                  2000,
-                  'Backend Developer',
-                  2000,
-                  'AI Developer',
-                  2000,
+                t('hero.roles.0'), 2000,
+                t('hero.roles.1'), 2000,
+                t('hero.roles.2'), 2000,
+                t('hero.roles.3'), 2000,
               ]}
               wrapper="h2"
               speed={50}
@@ -62,7 +60,7 @@ const Hero = () => {
         {/* Bio */}
         <FadeIn delay={0.4}>
           <p className="max-w-xl text-base leading-relaxed text-zinc-400">
-          {bio}
+          {t('hero.bio')}
         </p>
         </FadeIn>
 
@@ -73,7 +71,7 @@ const Hero = () => {
             className="bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
             onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Ver proyectos
+            {t('hero.viewProjects')}
             <ArrowRight size={16} className="ml-2" />
           </Button>
           <Button
@@ -82,7 +80,7 @@ const Hero = () => {
             asChild
           >
             <a href={portfolioData.profile.cvUrl} target="_blank" rel="noopener noreferrer">
-              Descargar CV
+              {t('hero.downloadCv')}
             </a>
           </Button>
         </div>
