@@ -25,7 +25,7 @@ i18n.use(initReactI18next).init({
         about: {
           tag: 'Conóceme',
           title: 'Sobre mí',
-          bio: 'Apasionado por construir experiencias digitales elegantes y funcionales. Me especializo en React, Laravel, FastAPI y soluciones con IA.',
+          bio: 'Carlos Daniel Amores Hernández | 22 años\n\nSoy originario de Chiapas y actualmente resido en Ramos Arizpe, Coahuila. Soy egresado de la Licenciatura en Ingeniería en Desarrollo y Tecnología de Software por la UNACH (actualmente con título y cédula en trámite).\n\nMi formación académica me ha permitido construir una base sólida en la lógica de programación y el ciclo de vida del software. Mi enfoque actual es la IA Agéntica, donde busco integrar agentes inteligentes en sistemas tradicionales para crear soluciones que no solo sigan reglas fijas, sino que operen de manera dinámica.\n\nMe considero un desarrollador práctico que disfruta el proceso de aprendizaje y la implementación de nuevas tecnologías para resolver problemas reales.',
           location: 'Ramos Arizpe, Coahuila',
           contact: 'Contáctame',
         },
@@ -78,7 +78,7 @@ i18n.use(initReactI18next).init({
         about: {
           tag: 'Get to know me',
           title: 'About me',
-          bio: 'Passionate about building elegant and functional digital experiences. I specialize in React, Laravel, FastAPI and AI solutions.',
+          bio: 'Carlos Daniel Amores Hernández | 22 years old\n\nOriginally from Chiapas, I am currently based in Ramos Arizpe, Coahuila. I am a graduate of the B.S. in Software Development and Technology from UNACH (Degree currently in progress).\n\nMy academic background has allowed me to build a solid foundation in programming logic and the software development lifecycle. My current focus is Agentic AI, where I aim to integrate intelligent agents into traditional systems to create solutions that don\'t just follow fixed rules but operate dynamically.\n\nI consider myself a practical developer who enjoys the learning process and the implementation of new technologies to solve real-world problems.',
           location: 'Ramos Arizpe, Coahuila',
           contact: 'Contact me',
         },
