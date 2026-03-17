@@ -87,7 +87,7 @@ export const portfolioData: PortfolioData = {
       featured: true,
     },
     {
-      id: 'project-2',
+      id: 'cv_analyzer',
       title: 'Task Manager',
       description: 'App de gestión de tareas con drag & drop y colaboración en tiempo real.',
       longDescription: 'Descripción larga...',

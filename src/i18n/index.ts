@@ -56,7 +56,7 @@ i18n.use(initReactI18next).init({
               description: 'Ecosistema basado en el Model Context Protocol para la gestión autónoma de correo electrónico mediante LLMs.',
               longDescription: 'Desarrollé una implementación completa del protocolo MCP que actúa como puente entre LLMs (Gemini, DeepSeek, Ollama) y servicios de comunicación. El sistema incluye un servidor con herramientas personalizadas para listar, leer y redactar correos, y un cliente dinámico construido en Streamlit. Implementé una arquitectura que permite al modelo decidir qué herramienta usar según la intención del usuario, integrando inferencia tanto local como en la nube para un procesamiento de datos eficiente y privado.',
             },
-            'project-2': {
+            'cv_analyzer': {
               title: 'AI Talent Matcher: CV Analyzer',
               description: 'Herramienta de análisis automatizado de perfiles profesionales utilizando LangChain y procesamiento de lenguaje natural.',
               longDescription: 'Desarrollé una aplicación para optimizar procesos de reclutamiento mediante la extracción inteligente de datos. Utilicé LangChain para orquestar el modelo DeepSeek, permitiendo analizar archivos PDF y extraer automáticamente información clave como educación, habilidades técnicas y áreas de especialización. El sistema compara el perfil del candidato contra una descripción de puesto específica, generando un resumen ejecutivo y un porcentaje de afinidad basado en la relevancia de las competencias detectadas.',
@@ -138,7 +138,7 @@ i18n.use(initReactI18next).init({
               description: 'A Model Context Protocol implementation for autonomous email management using multi-LLM orchestration.',
               longDescription: 'I built a full-stack MCP ecosystem that enables LLMs to interact directly with email services. The project features a custom MCP Server with specialized tools and prompts, integrated with a Streamlit-based chatbot. I implemented a multi-model architecture supporting Gemini, DeepSeek, and local inference via Ollama. This project demonstrates my ability to build agentic workflows where the AI moves beyond chat to execute real-world actions like summarizing, filtering, and sending professional communications.',
             },
-            'project-2': {
+            'cv_analyzer': {
               title: 'AI Talent Matcher: CV Analyzer',
               descriptionEn: 'AI-powered recruitment tool for resume screening and job matching using LangChain.',
               longDescriptionEn: 'I developed a recruitment automation tool that leverages LangChain to orchestrate DeepSeek for information extraction from PDF resumes. The system identifies key data points such as education and professional skills, comparing them against specific job descriptions. It generates an executive summary and a compatibility score, showcasing my ability to handle unstructured data and transform it into actionable insights using NLP.'
