@@ -59,6 +59,16 @@ export const portfolioData: PortfolioData = {
     { name: 'MCP', category: 'ai', level: 'intermediate' },
     { name: 'RAG', category: 'ai', level: 'intermediate' },
     { name: 'Inglés B1', category: 'other', level: 'intermediate' },
+    { name: 'OpenAI', category: 'ai', level: 'intermediate' },
+    { name: 'Gemini', category: 'ai', level: 'intermediate' },
+    { name: 'DeepSeek', category: 'ai', level: 'intermediate' },
+    { name: 'Ollama', category: 'ai', level: 'intermediate' },
+    { name: 'API REST', category: 'backend', level: 'advanced' },
+
+    // Principles
+    { name: 'SOLID', category: 'principles', level: 'intermediate' },
+    { name: 'Clean Code', category: 'principles', level: 'intermediate' },
+    { name: 'Patrones de Diseño', category: 'principles', level: 'intermediate' },
   ],
   projects: [
     {

@@ -1,5 +1,6 @@
-import { SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGit, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact } from 'react-icons/si'
-import { FaServer, FaNetworkWired, FaShieldAlt, FaDatabase, FaWindows, FaBrain, FaLanguage } from 'react-icons/fa'
+import { SiOpenai, SiGooglegemini, SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGit, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact } from 'react-icons/si'
+import { FaServer, FaNetworkWired, FaShieldAlt, FaDatabase, FaWindows, FaBrain, FaLanguage, FaRobot, FaCubes, FaCode, FaPlug } from 'react-icons/fa'
+import { MdArchitecture } from 'react-icons/md'
 import {
   Carousel,
   CarouselContent,
@@ -32,15 +33,23 @@ const iconMap: Record<string, React.ReactNode> = {
   'Postman':             <SiPostman className="text-orange-400" />,
   'Markdown':            <SiMarkdown className="text-zinc-300" />,
   'Office':              <FaWindows className="text-blue-400" />,
-  'Ciberseguridad':      <FaShieldAlt className="text-green-400" />,
-  'Redes':               <FaNetworkWired className="text-zinc-400" />,
-  'Sistemas Operativos': <FaWindows className="text-blue-300" />,
+  'Cibersecurity':       <FaShieldAlt className="text-green-400" />,
+  'Networks':            <FaNetworkWired className="text-zinc-400" />,
+  'Operating Systems':   <FaWindows className="text-blue-300" />,
   'LangChain':           <SiLangchain className="text-emerald-400" />,
   'LangGraph':           <FaBrain className="text-violet-400" />,
   'n8n':                 <SiN8N className="text-pink-400" />,
   'MCP':                 <FaBrain className="text-violet-300" />,
   'RAG':                 <FaBrain className="text-indigo-400" />,
   'Inglés B1':           <FaLanguage className="text-zinc-300" />,
+  'OpenAI':              <SiOpenai className="text-zinc-100" />,
+  'Gemini':              <SiGooglegemini className="text-blue-400" />,
+  'DeepSeek':            <FaRobot className="text-blue-300" />,
+  'Ollama':              <FaRobot className="text-violet-400" />,
+  'SOLID':               <FaCubes className="text-violet-400" />,
+  'Clean Code':          <FaCode className="text-emerald-400" />,
+  'Design Patterns':     <MdArchitecture className="text-blue-400" />,
+  'API REST':            <FaPlug className="text-orange-400" />,
 }
 
 const SkillCard = ({ skill }: { skill: Skill }) => (
@@ -72,11 +81,12 @@ const Skills = () => {
   const { skills } = portfolioData
 
   const categories = [
-    { key: 'frontend', label: t('skills.categories.frontend') },
-    { key: 'backend',  label: t('skills.categories.backend') },
-    { key: 'tools',    label: t('skills.categories.tools') },
-    { key: 'ai',       label: t('skills.categories.ai') },
-    { key: 'other',    label: t('skills.categories.other') },
+    { key: 'frontend',   label: t('skills.categories.frontend') },
+    { key: 'backend',    label: t('skills.categories.backend') },
+    { key: 'tools',      label: t('skills.categories.tools') },
+    { key: 'ai',         label: t('skills.categories.ai') },
+    { key: 'principles', label: t('skills.categories.principles') },
+    { key: 'other',      label: t('skills.categories.other') },
   ]
   
   return (
