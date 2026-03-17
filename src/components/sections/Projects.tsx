@@ -1,4 +1,5 @@
-import { Github, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { SiGithub } from 'react-icons/si'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
@@ -72,7 +73,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               className="bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
             >
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github size={14} className="mr-1" />
+                <SiGithub size={14} className="mr-1" />
                 GitHub
               </a>
             </Button>

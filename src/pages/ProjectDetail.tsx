@@ -1,7 +1,9 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Github } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
+import { SiGithub } from 'react-icons/si'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+
 import {
   Carousel,
   CarouselContent,
@@ -81,7 +83,7 @@ const ProjectDetail = () => {
               className="w-fit bg-violet-700 hover:bg-violet-800 text-white cursor-pointer"
             >
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github size={16} className="mr-2" />
+                <SiGithub size={16} className="mr-2" />
                 Ver en GitHub
               </a>
             </Button>

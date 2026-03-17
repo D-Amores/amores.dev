@@ -47,7 +47,12 @@ const Navbar = () => {
 
           {/* Logo / Nombre */}
           <span className="text-sm font-semibold text-zinc-100">
-            {portfolioData.profile.name}
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-sm font-semibold text-zinc-100 hover:text-violet-400 transition-colors cursor-pointer"
+            >
+              {portfolioData.profile.name}
+            </button>
           </span>
 
           {/* Links desktop */}
