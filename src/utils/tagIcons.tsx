@@ -1,5 +1,6 @@
-import { SiBootstrap, SiOpenai, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit } from 'react-icons/si'
-import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug } from 'react-icons/fa'
+import {SiMarkdown, SiPostman, SiLinux, SiBootstrap, SiOpenai, SiPodman, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit } from 'react-icons/si'
+import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug, FaCubes, FaCode, FaAws } from 'react-icons/fa'
+import { MdArchitecture } from 'react-icons/md'
 
 export const tagIconMap: Record<string, React.ReactNode> = {
   'Python':      <SiPython className="text-yellow-300" />,
@@ -30,4 +31,12 @@ export const tagIconMap: Record<string, React.ReactNode> = {
   'Ollama':    <FaRobot className="text-violet-400" />,
   'API REST':  <FaPlug className="text-orange-400" />,
   'Bootstrap': <SiBootstrap className="text-purple-400" />,
+  // 'AWS':            <SiAmazonwebservices className="text-orange-400" />,
+  'SOLID':          <FaCubes className="text-violet-400" />,
+  'Clean Code':     <FaCode className="text-emerald-400" />,
+  'Design Patterns': <MdArchitecture className="text-blue-400" />,
+  'Linux':          <SiLinux className="text-yellow-300" />,
+  'Postman':        <SiPostman className="text-orange-400" />,
+  'Podman':         <SiPodman className="text-blue-400" />,
+  'AWS':            <FaAws className="text-orange-400" />,
 }

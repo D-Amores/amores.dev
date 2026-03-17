@@ -44,15 +44,15 @@ export const portfolioData: PortfolioData = {
     { name: 'Git / GitHub', category: 'tools', level: 'advanced' },
     { name: 'Docker', category: 'tools', level: 'intermediate' },
     { name: 'Linux', category: 'tools', level: 'intermediate' },
-    { name: 'Servidores', category: 'tools', level: 'intermediate' },
+    { name: 'servers', category: 'tools', level: 'intermediate' },
     { name: 'Postman', category: 'tools', level: 'advanced' },
     { name: 'Markdown', category: 'tools', level: 'advanced' },
     { name: 'Office', category: 'tools', level: 'advanced' },
 
     // Other
-    { name: 'Ciberseguridad', category: 'other', level: 'intermediate' },
-    { name: 'Redes', category: 'other', level: 'intermediate' },
-    { name: 'Sistemas Operativos', category: 'other', level: 'intermediate' },
+    { name: 'Cybersecurity', category: 'other', level: 'intermediate' },
+    { name: 'Networks', category: 'other', level: 'intermediate' },
+    { name: 'Operating Systems', category: 'other', level: 'intermediate' },
     { name: 'LangChain', category: 'ai', level: 'intermediate' },
     { name: 'LangGraph', category: 'ai', level: 'intermediate' },
     { name: 'n8n', category: 'ai', level: 'intermediate' },
@@ -64,11 +64,15 @@ export const portfolioData: PortfolioData = {
     { name: 'DeepSeek', category: 'ai', level: 'intermediate' },
     { name: 'Ollama', category: 'ai', level: 'intermediate' },
     { name: 'API REST', category: 'backend', level: 'advanced' },
+    { name: 'AWS', category: 'tools', level: 'intermediate' },
+    { name: 'Podman', category: 'tools', level: 'intermediate' },
+    { name: 'RedHat', category: 'tools', level: 'intermediate' },
+    { name: 'Fedora', category: 'tools', level: 'intermediate' },
 
     // Principles
     { name: 'SOLID', category: 'principles', level: 'intermediate' },
     { name: 'Clean Code', category: 'principles', level: 'intermediate' },
-    { name: 'Patrones de Diseño', category: 'principles', level: 'intermediate' },
+    { name: 'Design Patterns', category: 'principles', level: 'intermediate' },
   ],
   projects: [
     {

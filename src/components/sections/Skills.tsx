@@ -1,5 +1,5 @@
-import { SiOpenai, SiGooglegemini, SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGit, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact } from 'react-icons/si'
-import { FaServer, FaNetworkWired, FaShieldAlt, FaDatabase, FaWindows, FaBrain, FaLanguage, FaRobot, FaCubes, FaCode, FaPlug } from 'react-icons/fa'
+import { SiRedhat, SiFedora,SiPodman, SiOpenai, SiGooglegemini, SiJavascript, SiTypescript, SiPhp, SiPython, SiFastapi, SiLaravel, SiGithub, SiDocker, SiPostman, SiMarkdown, SiBootstrap, SiTailwindcss, SiMysql, SiPostgresql, SiLinux, SiLangchain, SiN8N, SiReact } from 'react-icons/si'
+import { FaServer, FaNetworkWired, FaShieldAlt, FaDatabase, FaWindows, FaBrain, FaLanguage, FaRobot, FaCubes, FaCode, FaPlug, FaAws } from 'react-icons/fa'
 import { MdArchitecture } from 'react-icons/md'
 import {
   Carousel,
@@ -29,7 +29,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'Git / GitHub':        <SiGithub className="text-zinc-300" />,
   'Docker':              <SiDocker className="text-blue-400" />,
   'Linux':               <SiLinux className="text-yellow-300" />,
-  'Servidores':          <FaServer className="text-zinc-400" />,
+  'servers':          <FaServer className="text-zinc-400" />,
   'Postman':             <SiPostman className="text-orange-400" />,
   'Markdown':            <SiMarkdown className="text-zinc-300" />,
   'Office':              <FaWindows className="text-blue-400" />,
@@ -50,6 +50,10 @@ const iconMap: Record<string, React.ReactNode> = {
   'Clean Code':          <FaCode className="text-emerald-400" />,
   'Design Patterns':     <MdArchitecture className="text-blue-400" />,
   'API REST':            <FaPlug className="text-orange-400" />,
+  'AWS':                 <FaAws className="text-orange-400" />,
+  'Podman':              <SiPodman className="text-blue-400" />,
+  'RedHat':              <SiRedhat className="text-blue-400" />,
+  'Fedora':              <SiFedora className="text-blue-400" />,
 }
 
 const SkillCard = ({ skill }: { skill: Skill }) => (
