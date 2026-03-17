@@ -35,13 +35,14 @@ const Navbar = () => {
   }
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
-        visible ? 'translate-y-0' : '-translate-y-full'
-      }`}
-    >
+    // <header
+    //   className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+    //     visible ? 'translate-y-0' : '-translate-y-full'
+    //   }`}
+    // >
+    <header className="fixed top-0 left-0 right-0 z-50">
       {/* Barra principal */}
-      <div className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-sm">
+      <div className="border-b border-violet-900/30 bg-violet-950/20 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 md:px-6">
 
           {/* Logo / Nombre */}
@@ -86,7 +87,7 @@ const Navbar = () => {
 
       {/* Dropdown móvil */}
       {open && (
-        <div className="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-sm md:hidden">
+        <div className="border-b border-violet-900/30 bg-violet-950/40 backdrop-blur-md md:hidden">
           <nav className="mx-auto flex max-w-5xl flex-col px-6 py-4 gap-1">
             {navLinks.map((link) => (
               <button
