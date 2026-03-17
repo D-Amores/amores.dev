@@ -80,7 +80,7 @@ i18n.use(initReactI18next).init({
         contact: {
           tag: '¿Hablamos?',
           title: 'Contacto',
-          bio: 'Estoy disponible para proyectos freelance, colaboraciones o simplemente para platicar sobre tecnología. ¡No dudes en escribirme!',
+          bio: 'Hablemos de código (o de IA).\n\nActualmente estoy en el norte de México, listo para sumarme a retos que unan el desarrollo de software con agentes inteligentes. Estoy disponible para proyectos freelance, colaboraciones o simplemente para platicar sobre tecnología. ¡No dudes en escribirme para que platiquemos!',
           email: 'Email',
           location: 'Ubicación',
           socials: 'Redes sociales',
@@ -161,7 +161,7 @@ i18n.use(initReactI18next).init({
         contact: {
           tag: "Let's talk?",
           title: 'Contact',
-          bio: 'I am available for freelance projects, collaborations or just to talk about technology. Feel free to write me!',
+          bio: "Let's talk code (or AI).\n\nI'm currently based in Northern Mexico, ready to jump into challenges that combine software development with intelligent agents. I'm available for freelance projects, collaborations, or just to chat about tech. Don't hesitate to reach out!",
           email: 'Email',
           location: 'Location',
           socials: 'Social media',

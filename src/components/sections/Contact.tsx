@@ -3,6 +3,7 @@ import { SiGithub, SiInstagram } from 'react-icons/si'
 import { portfolioData } from '@/data/portfolio'
 import { FaLinkedin } from 'react-icons/fa'
 import FadeIn from '../ui/FadeIn'
+import { useTranslation } from 'react-i18next'
 
 const iconMap = {
   github:    { icon: SiGithub,    label: 'GitHub',    color: 'hover:text-zinc-100' },
@@ -11,7 +12,8 @@ const iconMap = {
 }
 
 const Contact = () => {
-  const { name, email, location, socials } = portfolioData.profile
+  const { t } = useTranslation()
+  const { email, location, socials } = portfolioData.profile
 
   return (
     <section id="contact" className="py-24 px-4 md:px-6 md:min-h-screen md:flex md:items-center">
@@ -19,9 +21,9 @@ const Contact = () => {
 
         {/* Título */}
         <div className="mb-12">
-          <span className="text-sm font-medium text-violet-400">¿Hablamos?</span>
+          <span className="text-sm font-medium text-violet-400">{t('contact.tag')}</span>
           <h2 className="mt-2 text-3xl font-bold text-zinc-100 md:text-4xl">
-            Contacto
+            {t('contact.title')}
           </h2>
         </div>
 
@@ -31,7 +33,7 @@ const Contact = () => {
           <FadeIn>
             <div className="flex flex-col gap-4 max-w-sm">
               <p className="text-zinc-400 leading-relaxed">
-                Estoy disponible para proyectos freelance, colaboraciones o simplemente para platicar sobre tecnología. ¡No dudes en escribirme!
+                {t('contact.bio')}
               </p>
             </div>
           </FadeIn>
@@ -47,7 +49,7 @@ const Contact = () => {
                     <Mail size={16} className="text-violet-400" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs text-zinc-500">Email</span>
+                    <span className="text-xs text-zinc-500">{t('contact.email')}</span>
                     <a
                       href={`mailto:${email}`}
                       className="text-sm text-zinc-300 hover:text-violet-400 transition-colors cursor-pointer"
@@ -65,7 +67,7 @@ const Contact = () => {
                     <MapPin size={16} className="text-violet-400" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs text-zinc-500">Ubicación</span>
+                    <span className="text-xs text-zinc-500">{t('contact.location')}</span>
                     <span className="text-sm text-zinc-300">{location}</span>
                   </div>
                 </div>
@@ -73,7 +75,7 @@ const Contact = () => {
 
               {/* Redes sociales */}
               <div className="flex flex-col gap-2">
-                <span className="text-xs text-zinc-500">Redes sociales</span>
+                <span className="text-xs text-zinc-500">{t('contact.socials')}</span>
                 <div className="flex items-center gap-4">
                   {socials.map((social) => {
                     const { icon: Icon, label, color } = iconMap[social.platform]
