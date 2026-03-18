@@ -71,10 +71,10 @@ i18n.use(initReactI18next).init({
               description: 'Sistema integral desarrollado para la Secretaría Anticorrupción y Buen Gobierno para la gestión de audiencias y eventos.',
               longDescription: 'Diseñamos y desplegamos una solución Full-Stack utilizando Laravel 8 y MySQL para digitalizar el control de agendas gubernamentales. Implementamos un sistema robusto de roles y permisos, seguridad avanzada y una interfaz dinámica con Bootstrap. Además, configuramos el entorno de producción en un servidor Debian 12 con Apache y automatizamos el envío de notificaciones y consultas en tiempo real mediante un Bot de Telegram integrado con tareas programadas (Cron).'
             },
-            'project-5': {
-              title: 'AI Spam Detector: ML Classification',
-              description: 'Sistema de detección de correo no deseado basado en modelos de aprendizaje supervisado y procesamiento de lenguaje natural.',
-              longDescription: 'Desarrollé un detector de spam utilizando Python y Streamlit, entrenado con un dataset de 75,000 correos electrónicos etiquetados. Implementé un modelo de Regresión Logística para la clasificación de texto, integrando una funcionalidad que permite configurar dinámicamente el volumen de datos de entrenamiento desde la interfaz. El sistema permite cargar archivos de correo para realizar predicciones en tiempo real, demostrando capacidades en preprocesamiento de datos (NLP), entrenamiento de modelos y evaluación de precisión.'
+            'rag-agent': {
+              title: 'Sistema RAG Agéntico',
+              description: 'Chatbot inteligente con base de datos vectorial para consultas dinámicas.',
+              longDescription: 'Implementé un sistema de Generación Aumentada por Recuperación (RAG) utilizando n8n como orquestador de procesos, PostgreSQL (pgvector) para el almacenamiento de vectores y modelos de lenguaje de OpenAI y DeepSeek. El agente de IA decide autónomamente cuándo consultar la base de datos para proporcionar respuestas veraces y precisas sobre mi trayectoria profesional. El sistema está integrado en un frontend moderno desarrollado con React, TypeScript y Tailwind CSS.'
             }
           }
         },
@@ -153,10 +153,10 @@ i18n.use(initReactI18next).init({
               description: 'Institutional agenda management system developed for the Anti-Corruption and Good Governance Secretariat.',
               longDescription: 'We designed and deployed a Full-Stack solution using Laravel 8 and MySQL to digitize government event tracking. We implemented a robust role-based access control (RBAC), advanced security measures, and a dynamic interface. We also managed the production environment on a Debian 12 server with Apache and automated daily notifications and real-time event queries through a Telegram Bot integrated with Cron jobs.'
             },
-            'project-5': {
-              title: 'AI Spam Detector: ML Classification',
-              description: 'Spam detection system based on supervised learning models and natural language processing.',
-              longDescription: 'I developed a spam detector using Python and Streamlit, trained on a dataset of 75,000 labeled emails. I implemented a Logistic Regression model for text classification, including a feature to dynamically configure the training data volume through the UI. The system enables real-time email uploads for accurate predictions, showcasing skills in data preprocessing (NLP), model training, and performance evaluation.'
+            'rag-agent': {
+              title: 'Agentic RAG System',
+              description: 'Intelligent chatbot with a vector database for dynamic queries.',
+              longDescription: 'I implemented a Retrieval-Augmented Generation (RAG) system using n8n as the process orchestrator, PostgreSQL (pgvector) for vector storage, and LLMs from OpenAI and DeepSeek. The AI agent autonomously decides when to query the vector database to provide truthful and precise answers about my professional career. The system is integrated into a modern frontend developed with React, TypeScript, and Tailwind CSS.'
             }
           }
         },
