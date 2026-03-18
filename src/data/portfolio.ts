@@ -7,7 +7,8 @@ export const portfolioData: PortfolioData = {
     bio: 'Bio corta',
     location: 'Ramos Arizpe, Coahuila, México',
     email: 'amores.dev@outlook.com',
-    cvUrl: '/cv.pdf',
+    phone: '+52 220 581 2639',
+    cvUrl: '/cv/CV_Daniel_Amores.pdf',
     socials: [
       {
         platform: 'github',
@@ -123,7 +124,7 @@ export const portfolioData: PortfolioData = {
       tags: ['PHP', 'Laravel', 'JavaScript', 'MySQL', 'Bootstrap', 'HTML', 'Linux', 'Servers', 'API REST', 'Design Patterns', '2 Developers'],
       githubUrl: 'https://github.com/D-Amores/agenda-gob',
       image: '/projects/project-4/photo_3.png',
-      images: ['/projects/project-4/photo_1.png', '/projects/project-4/photo_2.png', '/projects/project-4/photo_3.png', '/projects/project-4/photo_4.png', '/projects/project-4/photo_5.png', '/projects/project-4/photo_6.png', '/projects/project-4/photo_7.png'],
+      images: ['/projects/project-4/photo_1.png', '/projects/project-4/photo_2.png', '/projects/project-4/photo_3.png', '/projects/project-4/photo_4.png', '/projects/project-4/photo_5.png', '/projects/project-4/photo_6.png'],
       featured: false,
     },
     {

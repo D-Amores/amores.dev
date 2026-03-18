@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import { SiGithub, SiInstagram } from 'react-icons/si'
 import { portfolioData } from '@/data/portfolio'
 import { FaLinkedin } from 'react-icons/fa'
@@ -69,6 +69,23 @@ const Contact = () => {
                   <div className="flex flex-col">
                     <span className="text-xs text-zinc-500">{t('contact.location')}</span>
                     <span className="text-sm text-zinc-300">{location}</span>
+                  </div>
+                </div>
+              )}
+
+              {portfolioData.profile.phone && (
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900">
+                    <Phone size={16} className="text-violet-400" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-xs text-zinc-500">{t('contact.phone')}</span>
+                    <a
+                      href={`tel:${portfolioData.profile.phone}`}
+                      className="text-sm text-zinc-300 hover:text-violet-400 transition-colors cursor-pointer"
+                    >
+                      {portfolioData.profile.phone}
+                    </a>
                   </div>
                 </div>
               )}

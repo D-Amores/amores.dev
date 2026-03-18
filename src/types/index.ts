@@ -28,6 +28,7 @@ export interface Profile {
   bio: string
   location?: string
   email?: string
+  phone?: string
   avatar?: string
   cvUrl?: string
   socials: SocialLink[]
