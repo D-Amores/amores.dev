@@ -1,4 +1,4 @@
-import { MapPin, Mail, ArrowRight } from 'lucide-react'
+import { MapPin, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { portfolioData } from '@/data/portfolio'
@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 const About = () => {
   const { t } = useTranslation()
-  const { name, email, avatar } = portfolioData.profile
+  const { name, avatar } = portfolioData.profile
 
   const initials = name
     .split(' ')
