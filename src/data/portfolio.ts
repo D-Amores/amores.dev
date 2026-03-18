@@ -1,0 +1,142 @@
+import type { PortfolioData } from '../types'
+
+export const portfolioData: PortfolioData = {
+  profile: {
+    name: 'Daniel Amores',
+    role: 'Full Stack Developer',
+    bio: 'Bio corta',
+    location: 'Ramos Arizpe, Coahuila, México',
+    email: 'amores.dev@outlook.com',
+    phone: '+52 220 581 2639',
+    cvUrl: '/cv/CV_Daniel_Amores.pdf',
+    socials: [
+      {
+        platform: 'github',
+        url: 'https://github.com/D-Amores',
+      },
+      {
+        platform: 'linkedin',
+        url: 'http://www.linkedin.com/in/d-amores',
+      },
+      {
+        platform: 'instagram',
+        url: 'https://www.instagram.com/daniel_amoress',
+      },
+    ],
+  },
+  skills: [
+    // Frontend
+    { name: 'Next.js', category: 'frontend', level: 'intermediate' },
+    { name: 'React', category: 'frontend', level: 'advanced' },
+    { name: 'TypeScript', category: 'frontend', level: 'advanced' },
+    { name: 'Tailwind CSS', category: 'frontend', level: 'advanced' },
+    { name: 'JavaScript', category: 'frontend', level: 'advanced' },
+    { name: 'Shadcn', category: 'frontend', level: 'intermediate' },
+    { name: 'Bootstrap 5', category: 'frontend', level: 'advanced' },
+    { name: 'HTML', category: 'frontend', level: 'advanced' },
+    { name: 'CSS', category: 'frontend', level: 'advanced' },
+
+    // Backend
+    { name: 'FastAPI', category: 'backend', level: 'intermediate' },
+    { name: 'Laravel', category: 'backend', level: 'advanced' },
+    { name: 'Python', category: 'backend', level: 'intermediate' },
+    { name: 'PostgreSQL', category: 'backend', level: 'advanced' },
+    { name: 'SQL', category: 'backend', level: 'advanced' },
+    { name: 'PHP', category: 'backend', level: 'advanced' },
+    { name: 'MySQL', category: 'backend', level: 'advanced' },
+    { name: 'API REST', category: 'backend', level: 'advanced' },
+    
+    // Tools
+    { name: 'Git / GitHub', category: 'tools', level: 'advanced' },
+    { name: 'Docker', category: 'tools', level: 'intermediate' },
+    { name: 'Linux', category: 'tools', level: 'intermediate' },
+    { name: 'servers', category: 'tools', level: 'intermediate' },
+    { name: 'Node.js', category: 'tools', level: 'intermediate' },
+    { name: 'Postman', category: 'tools', level: 'advanced' },
+    { name: 'AWS', category: 'tools', level: 'intermediate' },
+    { name: 'Markdown', category: 'tools', level: 'advanced' },
+    { name: 'Fedora', category: 'tools', level: 'intermediate' },
+    { name: 'Office', category: 'tools', level: 'advanced' },
+    { name: 'Podman', category: 'tools', level: 'intermediate' },
+    { name: 'RedHat', category: 'tools', level: 'intermediate' },
+
+    // Other
+    { name: 'Inglés B1', category: 'other', level: 'intermediate' },
+    { name: 'Cybersecurity', category: 'other', level: 'intermediate' },
+    { name: 'Networks', category: 'other', level: 'intermediate' },
+    { name: 'Operating Systems', category: 'other', level: 'intermediate' },
+
+    // AI
+    { name: 'LangChain', category: 'ai', level: 'intermediate' },
+    { name: 'n8n', category: 'ai', level: 'intermediate' },
+    { name: 'MCP', category: 'ai', level: 'intermediate' },
+    { name: 'RAG', category: 'ai', level: 'intermediate' },
+    { name: 'LangGraph', category: 'ai', level: 'intermediate' },
+    { name: 'OpenAI', category: 'ai', level: 'intermediate' },
+    { name: 'Gemini', category: 'ai', level: 'intermediate' },
+    { name: 'DeepSeek', category: 'ai', level: 'intermediate' },
+    { name: 'Ollama', category: 'ai', level: 'intermediate' },
+
+    // Principles
+    { name: 'SOLID', category: 'principles', level: 'intermediate' },
+    { name: 'Clean Code', category: 'principles', level: 'intermediate' },
+    { name: 'Design Patterns', category: 'principles', level: 'intermediate' },
+  ],
+  projects: [
+    {
+      id: 'email-mcp-agent',
+      title: 'E-Commerce App',
+      description: 'Tienda online con carrito, pagos y panel de administración.',
+      longDescription: 'Este proyecto es una tienda online completa construida con React y Node.js. Cuenta con autenticación de usuarios, carrito de compras, integración con Stripe para pagos, y un panel de administración para gestionar productos y pedidos.',
+      tags: ['MCP', 'Python', 'Streamlit', 'AI', 'Gemini', 'DeepSeek', 'Ollama', 'Markdown', 'SOLID', 'Clean Code', 'Design Patterns', '1 Developer'],
+      githubUrl: 'https://github.com/D-Amores/email-mcp-gent',
+      image: '/projects/project-1/photo_1.png',
+      images: ["/projects/project-1/photo_1.png", "/projects/project-1/photo_2.png", "/projects/project-1/photo_3.png", "/projects/project-1/photo_4.png", "/projects/project-1/photo_5.png", "/projects/project-1/photo_6.png",],
+      featured: true,
+    },
+    {
+      id: 'cv_analyzer',
+      title: 'Task Manager',
+      description: 'App de gestión de tareas con drag & drop y colaboración en tiempo real.',
+      longDescription: 'Descripción larga...',
+      tags: ['Python', 'Streamlit', 'AI', 'LangChain', 'DeepSeek', 'Markdown', 'SOLID', 'Clean Code', 'Design Patterns', '1 Developer'],
+      githubUrl: 'https://github.com/D-Amores/cv_analyzer',
+      image: '/projects/project-2/photo_1.png',
+      images: ['/projects/project-2/photo_1.png', '/projects/project-2/photo_2.png', '/projects/project-2/photo_3.png', '/projects/project-2/photo_4.png', '/projects/project-2/photo_5.png', '/projects/project-2/photo_6.png', '/projects/project-2/photo_7.png', '/projects/project-2/photo_8.png'],
+      featured: true,
+    },
+    {
+      id: 'kanan',
+      title: 'Dev Blog',
+      description: 'Blog personal con MDX, modo oscuro y búsqueda de artículos.',
+      longDescription: 'Descripción larga...',
+      tags: ['PHP', 'Laravel', 'JavaScript', 'MySQL', 'Bootstrap', 'HTML', 'Linux', 'Servers', 'Postman', 'API REST','Clean Code', 'Design Patterns', 'SOLID', '3 Developers'],
+      githubUrl: 'https://github.com/D-Amores/kanan',
+      image: '/projects/project-3/photo_1.png',
+      images: ['/projects/project-3/photo_1.png', '/projects/project-3/photo_2.png', '/projects/project-3/photo_3.png', '/projects/project-3/photo_4.png', '/projects/project-3/photo_5.png', '/projects/project-3/photo_6.png', '/projects/project-3/photo_7.png'],
+      featured: true,
+    },
+    {
+      id: 'agenda',
+      title: 'Weather Dashboard',
+      description: 'Dashboard del clima con geolocalización y pronóstico de 7 días.',
+      longDescription: 'Descripción larga...',
+      tags: ['PHP', 'Laravel', 'JavaScript', 'MySQL', 'Bootstrap', 'HTML', 'Linux', 'Servers', 'API REST', 'Design Patterns', '2 Developers'],
+      githubUrl: 'https://github.com/D-Amores/agenda-gob',
+      image: '/projects/project-4/photo_3.png',
+      images: ['/projects/project-4/photo_1.png', '/projects/project-4/photo_2.png', '/projects/project-4/photo_3.png', '/projects/project-4/photo_4.png', '/projects/project-4/photo_5.png', '/projects/project-4/photo_6.png'],
+      featured: false,
+    },
+    {
+      id: 'rag-agent',
+      title: 'Proyecto 5',
+      description: 'Descripción corta',
+      longDescription: 'Descripción larga',
+      tags: ['n8n', 'AI', 'RAG', 'DeepSeek', 'OpenAI', 'Markdown', '1 Developer'],
+      // githubUrl: 'https://github.com/D-Amores/amores.dev',
+      image: '/projects/project-5/photo_1.png',
+      images: ['/projects/project-5/photo_1.png', '/projects/project-5/photo_2.png', '/projects/project-5/photo_3.png', '/projects/project-5/photo_4.png', '/projects/project-5/photo_5.png', '/projects/project-5/photo_6.png'],
+      featured: false,
+    },
+  ],
+}

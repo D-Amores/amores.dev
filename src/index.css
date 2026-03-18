@@ -116,14 +116,29 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+section {
+  scroll-snap-align: start;
+  min-height: 100dvh;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
   body {
-    @apply bg-background text-foreground;
-    }
+    @apply bg-zinc-900 text-zinc-100;
+  }
   html {
     @apply font-mono;
-    }
+  }
 }
