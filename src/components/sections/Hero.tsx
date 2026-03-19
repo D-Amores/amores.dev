@@ -19,7 +19,7 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-4 pt-20 md:px-6">
+    <section className="flex min-h-dvh flex-col items-center justify-center px-4 pt-20 md:px-6">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-6">
 
         {/* Saludo */}
