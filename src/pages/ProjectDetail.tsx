@@ -161,9 +161,15 @@ const ProjectDetail = () => {
           {project.longDescription && (
             <div className="flex flex-col gap-3">
               <h2 className="text-xl font-semibold text-zinc-100">{t('projects.about')}</h2>
-              <p className="text-zinc-400 leading-relaxed">
-                {t(`projects.items.${project.id}.longDescription`) ?? project.longDescription}
-              </p>
+              <div className="flex flex-col gap-4">
+                {t(`projects.items.${project.id}.longDescription`)
+                  .split('\n\n')
+                  .map((paragraph, i) => (
+                    <p key={i} className="text-zinc-400 leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+              </div>
             </div>
           )}
 
