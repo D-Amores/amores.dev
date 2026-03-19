@@ -119,16 +119,16 @@
 html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 body {
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
 section {
   scroll-snap-align: start;
-  min-height: 100dvh;
+  min-height: 100svh;
 }
 
 @layer base {
