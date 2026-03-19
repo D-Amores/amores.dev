@@ -19,7 +19,7 @@ const FadeIn = ({ children, delay = 0, direction = 'up', className }: FadeInProp
     <motion.div
       initial={{ opacity: 0, ...directionMap[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: false, margin: '-80px' }}
+      viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.5, delay, ease: 'easeOut' }}
       className={className}
     >
