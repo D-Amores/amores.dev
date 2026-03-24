@@ -1,8 +1,9 @@
 import { SiRedhat, SiFedora, SiNextdotjs, SiNodedotjs, SiMarkdown, SiPostman, SiLinux, SiBootstrap, SiOpenai, SiPodman, SiGooglegemini, SiPython, SiReact, SiLaravel, SiDocker, SiPostgresql, SiMysql, SiFastapi, SiTypescript, SiJavascript, SiTailwindcss, SiPhp, SiGithub, SiN8N, SiLangchain, SiStreamlit, SiHtml5, SiCss } from 'react-icons/si'
-import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug, FaCubes, FaCode, FaAws, FaServer } from 'react-icons/fa'
+import { FaBrain, FaUsers, FaUser, FaRobot, FaPlug, FaCubes, FaCode, FaAws, FaServer, FaDatabase } from 'react-icons/fa'
 import { MdArchitecture } from 'react-icons/md'
 
 export const tagIconMap: Record<string, React.ReactNode> = {
+  'ChromaDB': <FaDatabase className="text-orange-400" />,
   'Python':      <SiPython className="text-yellow-300" />,
   'React':       <SiReact className="text-cyan-400" />,
   'Laravel':     <SiLaravel className="text-red-400" />,
