@@ -75,6 +75,11 @@ i18n.use(initReactI18next).init({
               title: 'Sistema RAG Agéntico',
               description: 'Orquestación de IA Agéntica: Sistema RAG para procesamiento de documentos y consultas inteligentes.',
               longDescription: 'Desarrollé un sistema de Generación Aumentada por Recuperación (RAG) utilizando n8n para orquestar flujos de trabajo inteligentes de principio a fin. El sistema permite cargar archivos PDF, los cuales son procesados y convertidos en vectores almacenados en una base de datos PostgreSQL. Utilicé los modelos de OpenAI para la vectorización e inserción de datos, asegurando una recuperación de información precisa y eficiente.\n\nEl diferencial técnico de este proyecto es el uso de un Agente de IA con capacidad de decisión. El agente evalúa las consultas del usuario en tiempo real para determinar cuándo es necesario consultar la base de vectores mediante OpenAI, mientras que la generación final de las respuestas se delega a la API de DeepSeek. Esta arquitectura híbrida permite aprovechar la potencia de diferentes modelos según la etapa del proceso.'
+            },
+            'helpdesk-rag-graph': {
+              title: 'Helpdesk — RAG + LangGraph',
+              description: 'Sistema inteligente de helpdesk con RAG, LangGraph y ChromaDB para resolución automática de tickets.',
+              longDescription: 'Desarrollé un sistema de helpdesk inteligente utilizando RAG (Generación Aumentada por Recuperación) con LangGraph para orquestar el flujo de decisiones. El sistema carga documentos markdown como base de conocimiento, los procesa en chunks y los almacena como vectores en ChromaDB. Utilicé OpenAI para los embeddings y DeepSeek para la generación de respuestas, logrando una búsqueda semántica precisa mediante MultiQueryRetriever.\n\nEl diferencial técnico es la arquitectura agéntica con Human-in-the-Loop. LangGraph evalúa cada consulta en tiempo real: si la confianza del RAG es alta, responde automáticamente; si es baja o el problema es complejo, pausa el grafo y escala a un agente humano. El estado del grafo se persiste en SQLite mediante checkpointing, permitiendo reanudar conversaciones en cualquier momento. La interfaz en Streamlit muestra el problema y el ticket en la misma pantalla.'
             }
           }
         },
@@ -158,6 +163,11 @@ i18n.use(initReactI18next).init({
               title: 'Agentic RAG System',
               description: 'Agentic AI Orchestration: RAG System for document processing and intelligent queries.',
               longDescription: 'I developed a Retrieval-Augmented Generation (RAG) system using n8n to orchestrate end-to-end intelligent workflows. The system allows for PDF file uploads, which are processed and converted into vectors stored in a PostgreSQL database. I utilized OpenAI models for data vectorization and insertion, ensuring accurate and efficient information retrieval.\n\nThe technical standout of this project is the use of an AI Agent with decision-making capabilities. The agent evaluates user queries in real-time to determine when it is necessary to query the vector database via OpenAI, while the final response generation is delegated to the DeepSeek API. This hybrid architecture leverages the strengths of different models depending on the stage of the process.'
+            },
+            'helpdesk-rag-graph': {
+              title: 'Helpdesk — RAG + LangGraph',
+              description: 'Intelligent helpdesk system with RAG, LangGraph and ChromaDB for automatic ticket resolution.',
+              longDescription: 'I built an intelligent helpdesk system using RAG (Retrieval-Augmented Generation) with LangGraph to orchestrate the decision flow. The system loads markdown documents as a knowledge base, processes them into chunks and stores them as vectors in ChromaDB. I used OpenAI for embeddings and DeepSeek for response generation, achieving precise semantic search through MultiQueryRetriever.\n\nThe technical differentiator is the agentic architecture with Human-in-the-Loop. LangGraph evaluates each query in real time: if RAG confidence is high, it responds automatically; if confidence is low or the problem is complex, it pauses the graph and escalates to a human agent. Graph state is persisted in SQLite via checkpointing, allowing conversations to be resumed at any time. The Streamlit interface displays the problem and ticket on the same screen.'
             }
           }
         },
